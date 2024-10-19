@@ -1,1 +1,57 @@
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#graficos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grafico {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+
+.bar {
+    transition: all 0.3s ease;
+}
+
+.bar:hover {
+    opacity: 0.7;
+}
+
+.scatter {
+    transition: all 0.3s ease;
+}
+
+.scatter:hover {
+    marker-size: 10px; /* Aumenta o tamanho do marcador ao passar o mouse */
+}
+
+/* Cores das variáveis */
+:root {
+    --bg-color: #f0f0f0; /* Cor de fundo */
+    --primary-color: #007bff; /* Cor primária */
+    --secondary-color: #28a745; /* Cor secundária */
+    --text-color: #333; /* Cor do texto */
+    --font: 'Arial', sans-serif; /* Fonte padrão */
+  }
